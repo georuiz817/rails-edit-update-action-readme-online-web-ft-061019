@@ -19,5 +19,5 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 
-  # add edit and update methods here
+  get 'articles/:id/edit', to: 'articles#edit', as: :edit_article
 end
